@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var blueBulb: UIImageView!
+    @IBOutlet weak var redBulb: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func hideBlueBulb(sender: AnyObject) {
+        blueBulb.hidden = true
+    }
+    
+    @IBAction func hideRedBulb(sender: AnyObject) {
+        redBulb.hidden = true
+    }
 }
-
